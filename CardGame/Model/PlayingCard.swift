@@ -23,8 +23,9 @@ class PlayingCard : Card
     }
     
     func getRank() -> Int {return rank}
-    func getSuit() ->String {return suit}
-    func getColor() ->UIColor {return color}
+    func getSuit() -> String {return suit}
+    func getColor() -> UIColor {return color}
+    
     
     override func toString() -> String
     {
