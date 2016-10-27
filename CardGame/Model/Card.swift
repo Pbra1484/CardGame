@@ -40,22 +40,15 @@ class Card
         isFaceUp = false
     }
     
-    func getBackImage() -> UIImage{return backImage}
-    
-    func isFacing() -> Bool{return isFaceUp}
-    
     func toString() ->String
     {
         let description = "This card is \(isFaceUp)"
-        
         return description
     }
-    func setIsFaceUp(isFaceUp : Bool)
-    {
-        self.isFaceUp = isFaceUp
-    }
-    func setBackImage(backImage : UIImage)
-    {
-        self.backImage = backImage
-    }
+
+    
+    func getBackImage() -> UIImage {return backImage}
+    func isFacing() -> Bool {return isFaceUp}
+    func setFacing(isFaceUp : Bool) {self.isFaceUp = isFaceUp}
+    func setBackImage(backImage : UIImage) {self.backImage = backImage}
 }
