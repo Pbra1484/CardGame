@@ -16,7 +16,7 @@ cards : [PlayingCrd]
 +init
 +shuleDeck() : Void
 +orderDeck() : Void
-bg=yellow</panel_attributes>
+bg=black</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
@@ -57,8 +57,9 @@ bg=red</panel_attributes>
 + getSuit() : String
 + getColor() : UIColor
 + init() : Initializer
++ init(withRank:Int, ofSuit:String)
 + toString() : String
-bg=yellow</panel_attributes>
+bg=black</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
