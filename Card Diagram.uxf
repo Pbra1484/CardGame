@@ -4,8 +4,8 @@
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>380</x>
-      <y>560</y>
+      <x>390</x>
+      <y>570</y>
       <w>230</w>
       <h>100</h>
     </coordinates>
@@ -13,9 +13,8 @@
 --
 cards : [PlayingCrd]
 --
-+init
-+shuleDeck() : Void
-+orderDeck() : Void
++ init
++ orderDeck() : Void
 bg=black</panel_attributes>
     <additional_attributes/>
   </element>
@@ -23,7 +22,7 @@ bg=black</panel_attributes>
     <id>UMLClass</id>
     <coordinates>
       <x>760</x>
-      <y>250</y>
+      <y>260</y>
       <w>310</w>
       <h>130</h>
     </coordinates>
@@ -43,7 +42,7 @@ bg=red</panel_attributes>
     <id>UMLClass</id>
     <coordinates>
       <x>760</x>
-      <y>520</y>
+      <y>530</y>
       <w>310</w>
       <h>180</h>
     </coordinates>
@@ -66,7 +65,7 @@ bg=black</panel_attributes>
     <id>Relation</id>
     <coordinates>
       <x>900</x>
-      <y>370</y>
+      <y>380</y>
       <w>30</w>
       <h>170</h>
     </coordinates>
@@ -77,7 +76,7 @@ bg=black</panel_attributes>
     <id>UMLClass</id>
     <coordinates>
       <x>150</x>
-      <y>90</y>
+      <y>100</y>
       <w>230</w>
       <h>100</h>
     </coordinates>
@@ -94,14 +93,16 @@ public/private</panel_attributes>
     <id>UMLClass</id>
     <coordinates>
       <x>390</x>
-      <y>250</y>
+      <y>280</y>
       <w>230</w>
       <h>100</h>
     </coordinates>
     <panel_attributes>CardGame.Model::Deck
 --
-
+- cards : [card]
 --
++ shuleDeck() : Void
++ cutDeck : Void
 bg=red</panel_attributes>
     <additional_attributes/>
   </element>
@@ -109,25 +110,39 @@ bg=red</panel_attributes>
     <id>Relation</id>
     <coordinates>
       <x>490</x>
-      <y>340</y>
+      <y>370</y>
       <w>30</w>
-      <h>240</h>
+      <h>220</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;-</panel_attributes>
-    <additional_attributes>10.0;10.0;10.0;220.0</additional_attributes>
+    <additional_attributes>10.0;10.0;10.0;200.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>600</x>
-      <y>590</y>
-      <w>180</w>
+      <x>610</x>
+      <y>600</y>
+      <w>170</w>
       <h>50</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-
 m1=1
 m2=52
 </panel_attributes>
-    <additional_attributes>10.0;20.0;160.0;20.0</additional_attributes>
+    <additional_attributes>10.0;20.0;150.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>610</x>
+      <y>310</y>
+      <w>170</w>
+      <h>50</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-
+m1=1
+m2=n
+</panel_attributes>
+    <additional_attributes>10.0;20.0;150.0;20.0</additional_attributes>
   </element>
 </diagram>
