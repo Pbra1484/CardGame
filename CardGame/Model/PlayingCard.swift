@@ -52,7 +52,7 @@ class PlayingCard : Card
         return description
     }
     
-    //The class modifier mke is so the method is visible without an instace 
+    //The class modifier makes it so the method is visible without an instace 
     //You would calll it by ClassName.method()
     //In this cas PlayingCard.CalidRanks()
     class func validRanks() -> [String]

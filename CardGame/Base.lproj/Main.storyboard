@@ -3,7 +3,6 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Card Game Controller-->
@@ -18,50 +17,41 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dsJ-oY-Iny">
-                                <rect key="frame" x="94" y="7" width="412" height="586"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="465" id="5MO-go-JbQ"/>
-                                    <constraint firstAttribute="width" constant="304" id="yKV-92-3Vm"/>
-                                </constraints>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dsJ-oY-Iny">
+                                <rect key="frame" x="137" y="67" width="326" height="465"/>
                                 <state key="normal" title="Words" backgroundImage="CardBack">
                                     <color key="titleColor" red="0.50196081399917603" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
-                                <variation key="default">
-                                    <mask key="constraints">
-                                        <exclude reference="5MO-go-JbQ"/>
-                                        <exclude reference="yKV-92-3Vm"/>
-                                    </mask>
-                                </variation>
                                 <variation key="heightClass=regular" fixedFrame="YES">
                                     <rect key="frame" x="52" y="59" width="412" height="586"/>
                                 </variation>
-                                <variation key="widthClass=compact">
-                                    <mask key="constraints">
-                                        <include reference="5MO-go-JbQ"/>
-                                        <include reference="yKV-92-3Vm"/>
-                                    </mask>
-                                </variation>
+                                <connections>
+                                    <action selector="cardCick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wyI-WD-Gee"/>
+                                </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YZs-SP-Uc0">
+                                <rect key="frame" x="137" y="20" width="326" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="dsJ-oY-Iny" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="28" id="BK1-lM-Y58"/>
-                            <constraint firstItem="dsJ-oY-Iny" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="47" id="vAv-wb-DC1"/>
+                            <constraint firstItem="dsJ-oY-Iny" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="3hS-FR-shL"/>
+                            <constraint firstItem="dsJ-oY-Iny" firstAttribute="top" secondItem="YZs-SP-Uc0" secondAttribute="bottom" constant="30" id="Qln-2j-Wro"/>
+                            <constraint firstItem="YZs-SP-Uc0" firstAttribute="width" secondItem="dsJ-oY-Iny" secondAttribute="width" id="bM2-Ll-kZG"/>
+                            <constraint firstItem="dsJ-oY-Iny" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="fov-z4-085"/>
+                            <constraint firstItem="YZs-SP-Uc0" firstAttribute="leading" secondItem="dsJ-oY-Iny" secondAttribute="leading" id="iFd-fR-Ixc"/>
                         </constraints>
-                        <variation key="default">
-                            <mask key="constraints">
-                                <exclude reference="BK1-lM-Y58"/>
-                                <exclude reference="vAv-wb-DC1"/>
-                            </mask>
-                        </variation>
-                        <variation key="widthClass=compact">
-                            <mask key="constraints">
-                                <include reference="BK1-lM-Y58"/>
-                                <include reference="vAv-wb-DC1"/>
-                            </mask>
-                        </variation>
                     </view>
+                    <connections>
+                        <outlet property="UIButton" destination="dsJ-oY-Iny" id="uql-1O-CPK"/>
+                        <outlet property="UILabel" destination="YZs-SP-Uc0" id="Dro-6J-prV"/>
+                        <outlet property="UILable" destination="YZs-SP-Uc0" id="mYc-U0-D82"/>
+                        <outlet property="cardButton" destination="dsJ-oY-Iny" id="iJu-B8-GAl"/>
+                        <outlet property="cardLael" destination="YZs-SP-Uc0" id="fY6-HC-2gj"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
