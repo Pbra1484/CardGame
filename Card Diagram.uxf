@@ -11,7 +11,7 @@
     </coordinates>
     <panel_attributes>CardGame.Model::PlayingCardDeck
 --
-cards : [PlayingCrd]
+- cards : [PlayingCrd]
 --
 + init
 + orderDeck() : Void
@@ -93,9 +93,9 @@ public/private</panel_attributes>
     <id>UMLClass</id>
     <coordinates>
       <x>390</x>
-      <y>280</y>
+      <y>260</y>
       <w>230</w>
-      <h>100</h>
+      <h>140</h>
     </coordinates>
     <panel_attributes>CardGame.Model::Deck
 --
@@ -103,6 +103,8 @@ public/private</panel_attributes>
 --
 + shuleDeck() : Void
 + cutDeck : Void
++ drawCard() : Card!
++ drawRandomCard() : Card!
 bg=red</panel_attributes>
     <additional_attributes/>
   </element>
@@ -110,12 +112,12 @@ bg=red</panel_attributes>
     <id>Relation</id>
     <coordinates>
       <x>490</x>
-      <y>370</y>
+      <y>390</y>
       <w>30</w>
-      <h>220</h>
+      <h>200</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;-</panel_attributes>
-    <additional_attributes>10.0;10.0;10.0;200.0</additional_attributes>
+    <additional_attributes>10.0;10.0;10.0;180.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
