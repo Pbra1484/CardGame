@@ -33,6 +33,10 @@ class PlayingCard : Card
     func getRank() -> Int {return rank}
     func getSuit() -> String {return suit}
     func getColor() -> UIColor {return color}
+    func getCardData() ->String
+    {
+        return "\(PlayingCard.validRanks()[rank])\(suit)"
+    }
     
     
     override func toString() -> String
