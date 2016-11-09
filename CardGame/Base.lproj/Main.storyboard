@@ -13,7 +13,7 @@
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC" customClass="CadGameController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -26,7 +26,7 @@
                                     <rect key="frame" x="52" y="59" width="412" height="586"/>
                                 </variation>
                                 <connections>
-                                    <action selector="cardCick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wyI-WD-Gee"/>
+                                    <action selector="cardCick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="949-rd-KuO"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YZs-SP-Uc0">
@@ -46,11 +46,8 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="UIButton" destination="dsJ-oY-Iny" id="uql-1O-CPK"/>
-                        <outlet property="UILabel" destination="YZs-SP-Uc0" id="Dro-6J-prV"/>
-                        <outlet property="UILable" destination="YZs-SP-Uc0" id="mYc-U0-D82"/>
-                        <outlet property="cardButton" destination="dsJ-oY-Iny" id="iJu-B8-GAl"/>
-                        <outlet property="cardLael" destination="YZs-SP-Uc0" id="fY6-HC-2gj"/>
+                        <outlet property="cardButton" destination="dsJ-oY-Iny" id="xa9-vf-p52"/>
+                        <outlet property="cardLabel" destination="YZs-SP-Uc0" id="1UB-gM-UC7"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
