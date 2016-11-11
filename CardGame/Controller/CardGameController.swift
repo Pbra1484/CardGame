@@ -34,6 +34,7 @@ class CardGameController : UIViewController
         else
         {
             cardButton.setTitle("deck over", forState: UIControlState.Normal)
+            cardDeck = PlayingCardDeck()
         }
         
         cardLabel.text = content
