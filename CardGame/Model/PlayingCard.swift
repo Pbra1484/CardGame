@@ -41,17 +41,7 @@ class PlayingCard : Card
     
     override func toString() -> String
     {
-        let backStatus : String
-        if super.isFacing()
-        {
-            backStatus = " is face up"
-        }
-        else
-        {
-            backStatus = " is face down"
-        }
-        
-        let description = "The rank is \(rank) the suit is \(suit) and the color is \(color) and \(backStatus)"
+        let description = "The rank is \(rank) the suit is \(suit) and the color is \(color)"
         
         return description
     }
