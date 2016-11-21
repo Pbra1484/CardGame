@@ -25,9 +25,6 @@ class Card
         return description
     }
     
-    
-    func getBackImage() -> UIImage {return backImage}
     func isFacing() -> Bool {return isFaceUp}
     func setFacing(isFaceUp : Bool) {self.isFaceUp = isFaceUp}
-    func setBackImage(backImage : UIImage) {self.backImage = backImage}
 }
