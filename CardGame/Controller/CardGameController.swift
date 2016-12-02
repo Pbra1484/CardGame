@@ -32,7 +32,7 @@ class CardGameController : UIViewController
             cardButton.setTitle("\(currentCard.getCardData())", forState: UIControlState.Normal)
         }
         else
-        {
+        {t
             cardButton.setTitle("deck over", forState: UIControlState.Normal)
             cardDeck = PlayingCardDeck()
         }
@@ -41,50 +41,3 @@ class CardGameController : UIViewController
         
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-+
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.0
