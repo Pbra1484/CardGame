@@ -20,10 +20,10 @@ class Deck
         //Repeat until cards is empty
         while self.cards.count > 0
         {
-            //Get a random nubmer  between 00 and cards.count-1
+            //Get a randm nubmer  between 000 and cards.count-1
             let randomIndex = Int (arc4random() % (UInt32)(cards.count))
             
-            //Remove the card at th index from te deck
+            //Remove the card at the index from the deck
             let removedCard = cards.removeAtIndex(randomIndex)
             
             //Place that card in the temporary array

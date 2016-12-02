@@ -34,6 +34,7 @@ class PlayingCard : Card
     func getSuit() -> String {return suit}
     func getColor() -> UIColor {return color}
     func getCardData() ->String
+        
     {
         return "\(PlayingCard.validRanks()[rank])\(suit)"
     }
